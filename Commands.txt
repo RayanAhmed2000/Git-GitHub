@@ -1,0 +1,89 @@
+Configure GIT
+------------
+
+git config --global user.name "rayan"
+git config  --global user.email "rayanahmed4334@gmail.com"
+
+
+mkdir Gitrepo           # make a dir and make it git repository
+cd Gitrepo
+git init
+
+
+Connect/Pull/Push on GitHub
+---------------------------
+
+git remote add origin https://github.com/RayanAhmed2000/centralrepo      #connect your Git to GitHUB
+
+git push -u origin master                                                #push your code on github after this it will ask for username and password
+
+git pull origin master                                                   #pull content from GitHub
+
+git clone <repo url>                                                     # clone repo                                               
+
+
+
+
+Log Commands
+------------
+
+git log -1                 #display last commit
+git log -2                 #display last two commits 
+git log --oneline          #display all commits in one line in short  
+git log --grep "ignore"    #display commit in which there was "ignore" word in message
+
+
+
+Other Commands
+--------------
+
+git status                          #check status 
+
+git add .                           #add file to staging area
+
+git reset .                         #remove file from staging area
+
+git commit -m "First Commit"        #Commit with message "First Commit"
+
+git show dge98327x929r87cbsjhbf     #Show content of file having commit ID -  dge98327x929r87cbsjhbf
+
+git show <tagname>                  #Show content of file having tag
+
+git clean -n                        #Display and then delete all untracked files
+
+git clean -f                        #Forcefully delete
+
+
+
+Branching
+---------
+
+git branch                      #show branches
+
+git branch samplebranch         #create branch named sample branch
+
+git checkout samplebranch       #switch to samplebranch
+
+git merge samplebranch          #merge branch in master branch
+
+
+Stashing
+--------
+
+git stash                       move file to stash area
+
+git stash list                  list all files +nt in stash area
+
+git stash apply stash@{0}       bring latest file back to workspace
+
+git stash clear                 when you bring back file to workspace it is still +nt in stash so you can clear stash        
+
+
+Tags
+----
+
+git tag -a <tagname> -m <message> <commit ID>   apply tag
+
+git tag                                         see list of tags
+
+git tag -d <tagname>                            delete tag
