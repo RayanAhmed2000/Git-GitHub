@@ -21,6 +21,11 @@ git pull origin master                                                   #pull c
 
 git clone <repo url>                                                     # clone repo                                               
 
+When you clone a git repo and make a new branch and then you try to do git push then it will show error 
+WHY ?  - Because there is no upstream branch on git
+How to push then , using below command
+
+git push --set-upstream origin master
 
 
 
